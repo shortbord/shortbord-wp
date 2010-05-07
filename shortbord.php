@@ -5,7 +5,7 @@
  Author: Nick Ohrn of Plugin-Developer.com
  Author URI: http://plugin-developer.com
  Description: Quickly and easily integrate the Shortbord sponsorship platform.
- Version: 1.0.2
+ Version: 1.0.3
  */
 
 if(!class_exists('Shortbord')) {
