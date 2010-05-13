@@ -90,6 +90,7 @@
 						<label>
 							<input <?php checked($settings['title-method'],'automatic'); ?> type="radio" name="shortbord[title-method]" id="shortbord-title-method-automatic" value="automatic" />
 							<?php _e('I want the Shortbord plugin to automatically insert a post author\'s Shortbord endorsement next to the title'); ?>
+							<small><strong><?php _e('Please note, this may not work on all themes.'); ?></strong></small>
 						</label><br />
 						<label>
 							<input <?php checked($settings['title-method'],'manual'); ?> type="radio" name="shortbord[title-method]" id="shortbord-title-method-manual" value="manual" />

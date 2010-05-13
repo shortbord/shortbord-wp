@@ -5,14 +5,14 @@
  Author: Nick Ohrn of Plugin-Developer.com
  Author URI: http://plugin-developer.com
  Description: Quickly and easily integrate the Shortbord sponsorship platform.
- Version: 1.0.3
+ Version: 1.0.4
  */
 
 if(!class_exists('Shortbord')) {
 	class Shortbord {
 
 		var $_option_Name = 'Shortbord Settings';
-		var $_option_Defaults = array('post-size'=>64, 'title-method'=>'automatic', 'privacy'=>0,'send-content'=>1,'position'=>'right','size'=>'64','failimage'=>'','method'=>'automatic','styling'=>".shortbord {\n\tfloat: right;\n\tmargin: 1px 12px 0px 0px;\n\1px solid #47453a;\n}");
+		var $_option_Defaults = array('post-size'=>64, 'title-method'=>'manual', 'privacy'=>0,'send-content'=>1,'position'=>'right','size'=>'64','failimage'=>'fullsize','method'=>'automatic','styling'=>".shortbord {\n\tfloat: right;\n\tmargin: 1px 12px 0px 0px;\n\1px solid #47453a;\n}");
 		var $settings = null;
 		var $previouslyAppendedToPostTitle = false;
 

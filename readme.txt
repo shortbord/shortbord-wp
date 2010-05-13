@@ -3,7 +3,7 @@ Contributors: nickohrn
 Tags: endorsements, shortbord, comments, frontend, admin, backend, settings, javascript
 Requires at least: 2.8
 Tested up to: 3.0
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 
 The Shortbord plugin allows you to quickly add Shortbord endorsements to your users' comments, authors' post titles, and your
 sidebars.
@@ -36,3 +36,12 @@ by participating in your community.
 
 If you wish, you can configure a widget for your site that pulls in your Shortbord endorsements.  Just go to Appearance > Widgets
 and configure the Shortbord widget in whatever sidebar you wish.
+
+== FAQ ==
+
+1. Why is automatic endorsement insertion not working for my post titles?
+
+There are a few reasons that automatic insertion of endorsements for post titles may not be working.  First, it only activates
+on single post pages.  That is, a page that is designed to display a single post or page.  Second, it will only work with
+the first call to the_title() inside of the loop.  That means that if you have some markup where you use the_title() inside
+of an attribute, the endorsement won't display appropriately.
